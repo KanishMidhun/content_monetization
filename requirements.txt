@@ -4,3 +4,7 @@ joblib
 python-dotenv
 google-api-python-client
 isodate
+matplotlib
+seaborn
+scikit-learn
+numpy
