@@ -21,7 +21,7 @@ else:
 # ========================
 # 🤖 Load Trained Model
 # ========================
-model = joblib.load(r"C:\Users\kanis\OneDrive\Desktop\pythonvsworksdir\lux_house\youtube_revenue_model.pkl")
+model = joblib.load("youtube_revenue_model.pkl")
 
 # ========================
 # 🧠 Helper Functions
@@ -226,4 +226,5 @@ elif mode == "YouTube Link Input":
             data = pd.DataFrame([stats])
             pred = model.predict(data)[0]
             st.success(f"💰 Estimated Ad Revenue: **${pred:,.2f}**")
+
 
